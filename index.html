@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/svg" sizes="32x32" href="./images/logo.svg">
+  <link rel="icon" type="image/svg" sizes="32x32" href="./images/bg-pattern-desktop.svg">
+  <link rel="icon" type="image/svg" sizes="32x32" href="./images/icon-arrow.svg"> 
+  <link rel="icon" type="image/svg" sizes="32x32" href="./images/icon-error.svg">
+  
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+      * {
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;
+      }
+      body {
+          background: url("images/bg-pattern-desktop.svg"), linear-gradient(135deg,hsl(0, 80%, 86%), hsl(0, 100%, 98%));
+          background-size: cover;
+      }
+      
+      .left {
+          position: absolute;
+          left: 10%;
+          width: 35%;
+      }
+      .logo {
+          position: absolute;
+          left: 10%;
+          margin-top: 50px;
+      }
+      .left h1 {
+          text-transform: uppercase;
+          position: absolute;
+          top: 20vh;
+          font-size: 50px;
+      }
+      .left h1 span {
+          color: hsl(0, 36%, 70%);
+      }
+      .words {
+          position: absolute;
+          top: 55vh;
+          color: hsl(0, 36%, 70%);
+      }
+      .left input {
+          position: absolute;
+          left: 0;
+          top: 70vh;
+          width: 100%;
+          height: 30px;
+          border-radius: 20px;
+          border: 1px solid hsl(0, 36%, 70%);
+          padding-left: 20px;
+          box-shadow: 0 1px 3px 1px rgba(0,0,0,0.1);
+      }
+      ::placeholder {
+          color: hsl(0, 36%, 70%)
+      }
+      .btn {
+          position: absolute;
+          top: 70vh;
+          left: 90%;
+          width: 12%;
+          height: 30px;
+          border-radius: 20px;
+          background: linear-gradient(135deg,hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-shadow: 2px 2px 3px 1px rgba(0,0,0,0.1);
+      }
+      .right {
+          position: absolute;
+          left: 60%;
+          width: 40%;
+          height: 100vh;
+      }
+      .right img {
+          width: 100%;
+          height: 100vh
+      }
+      
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+      
+      
+     @media (max-width:800px) {
+        body {
+            background-image: none;
+            background: linear-gradient(135deg,hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+        }
+         .right {
+             position: absolute;
+             left: 0;
+             top: 20vh;
+             width: 100%;
+             height: 40vh;
+         }
+         .right img {
+             width: 100%;
+             height: 60vh;
+             src: url("images/hero-mobile.jpg");
+         }
+         .left {
+             left: 10;
+             top: 80vh;
+             width: 80%;
+         }
+         .left h1 {
+             left: 30%;
+             text-align: center
+         }
+         .words {
+             left: 10%;
+             right: 10%;
+         }
+         .left input {
+             height: 40px;
+         }
+         .btn {
+             width: 15%;
+             height: 40px;
+         }
+    }
+  </style>
+</head>
+<body>
+    <img class="logo" src="images/logo.svg">
+    <div class="left">
+        <h1><span>we're</span><p>coming</p> <p>soon</p></h1>
+        <p class="words">Hello fellow shoppers! We're currently           building our new fashion store. 
+            Add your email below to stay up-to-date with announcements and our launch deals.
+        </p>
+        <input type="email" placeholder="Email Address">
+        <div class="btn">
+            <img src="images/icon-arrow.svg">
+        </div>
+    </div>
+    <div class="right">
+        <img src="images/hero-desktop.jpg">
+    </div>
+  
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+</body>
+</html>
